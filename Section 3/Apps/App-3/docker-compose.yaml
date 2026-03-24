@@ -1,0 +1,26 @@
+services:
+
+  web:
+    build: ./app              # Build from Dockerfile
+    ports:
+      - "5000:5000"          # Host:Container
+    volumes:
+      - ./app:/app           # Live code reload
+    environment:
+      - DB_HOST=db
+      - DB_USER=postgres
+      - DB_PASSWORD=example
+    depends_on:
+      - db                   # Start db first
+
+  db:
+    image: postgres:15       # Pull from Docker Hub
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:

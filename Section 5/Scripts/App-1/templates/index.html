@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>{{_('Hello, World!')}}</p>
+    <p>{{_('You have %(n)s unread message', n=count)}}</p>
+    <br><br>
+
+    {%trans%} A long paragraph to be translated... {%endtrans%}
+
+    <p> {{ d | datetimeformat }}</p>
+    
+</body>
+</html>

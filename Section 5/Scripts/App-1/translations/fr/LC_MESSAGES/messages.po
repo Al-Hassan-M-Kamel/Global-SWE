@@ -1,0 +1,37 @@
+# French translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-04-11 10:35+0200\n"
+"PO-Revision-Date: 2026-04-11 10:36+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: app.py:14
+msgid "Welcome To our app..."
+msgstr "Bienvenue sur notre application..."
+
+#: templates/index.html:10
+msgid "Hello, World!"
+msgstr "Bonjour le monde!"
+
+#: templates/index.html:11
+#, python-format
+msgid "You have %(n)s unread message"
+msgstr "Vous avez %(n)s messages non lus"
+
+#: templates/index.html:14
+msgid " A long paragraph to be translated... "
+msgstr "Un long paragraphe à traduire..."
+
